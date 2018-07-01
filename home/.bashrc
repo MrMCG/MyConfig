@@ -13,7 +13,7 @@ alias ls="ls --color=always"
 alias ll="ls -l"
 alias la="ls -la"
 
-alias grep="grep --line-number"
+alias grep="grep --color=auto --line-number"
 alias grep-near="grep -A 3 -B 3"
 
 alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1 | sed -e's/:$//g' | grep -v '[0-9]$' | xargs tail -f"
@@ -21,11 +21,11 @@ alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1
 alias folders=$(find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn)
 alias diskspace="du -S | sort -n -r |more"
 
+alias vimall="vim * \.*"
+
 #--------------------
 # Exports
 #--------------------
-
-export GREP_OPTIONS="--color=auto"
 
 export HISTFILESIZE=20000
 export HISTSIZE=10000
@@ -44,7 +44,8 @@ export LESS_TERMCAP_us=$"\E[01;32m"
 #--------------------
 
 set -o vi
-set -ixon
+
+stty -ixon
 
 #--------------------
 # Functions
