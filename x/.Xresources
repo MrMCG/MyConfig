@@ -1,0 +1,32 @@
+XTerm.termName: xterm-256color
+
+XTerm*cursorBlink: true
+XTerm*scaleHeight: 1.1
+
+Xft.dpi: 125
+
+XTerm*geometry: 400x300
+XTerm*scrollTtyOutput: false
+XTerm*locale: true
+
+XTerm*faceName: Adobe Courier
+XTerm*faceSize: 12
+
+XTerm*metaSendsEscape: true
+XTerm*pointerColor: red
+XTerm*pointerColorBackground: black
+XTerm*internalBorder: 3
+XTerm*loginShell: true
+XTerm*scrollBar: false
+XTerm*scrollKey: true
+XTerm*saveLines: 10000
+XTerm*multiClickTime: 250
+
+! special
+*.foreground:   #c0e0ff
+*.background:   #0a0b01
+*.cursorColor:  #b5f8b6
+ 
+!! blue
+*.color4:       #3971ed
+*.color12:      #3971ed
